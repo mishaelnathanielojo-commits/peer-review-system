@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peer Review System</title>
+    <link rel="stylesheet" href="PR.css">
+    <link rel="stylesheet" href="submission.html">
+</head>
+<body>
+    <main class="container" role="main">
+
+        <header class="app-header">
+            <div class="brand">
+                <div class="logo"> PR </div>
+            </div>
+        </header>
+
+        <!-- LEFT: SUBMISSION FORM -->
+         <section class="left-col">
+            <div class="card" aria-labelledby="form-title">
+                <h2 id="form-title" style="margin-top: 0; margin-bottom: 8px; font-size: 16px"> Submit an Assignment</h2>
+                <p class="muted-small"> Fill in the details below and upload your file. (functionality would be added in week two).</p>
+
+                <form id="submission-form"> 
+                    <div>
+                        <label for="assignment-title"> Assignment Title </label>
+                        <input class="input" id=" assignment-title" name="title" type="text" placeholder="E.g. CSC125 - Project Report" required \>
+            
+                    </div>
+
+                    <div>
+                        <label for="course-select"> Courses </label>
+                        <select class="input" id="course-select" name="Course" required \>
+                            <option value=""> Select Course </option>
+                            <option value=""> CSC231 - Internet Programming </option>
+                            <option value=""> CSC233 - Programming with C++ </option>
+                            <option value=""> CYB211 - Cyber Security and Strategy </option>
+                            <option value=""> GST211 - Philosophy, Logic and Human Existence </option>
+                            <option value=""> IFT211 - Digital Logic Design </option>
+                            <option value=""> TMC211 - Total Man Concept  </option>
+                            <option value=""> MTH213 - Elementary Differential Equations </option>
+                            <option value=""> SEN211 - Software Engineering </option>
+                            <option value=""> MTH212 - Mathematical Methods. </option>
+                            <option value=""> DLD111 - Leadership Development </option>
+                            <option value=""> TMC212 - Success Parameters </option>
+                            <option value=""> CIT211 - Java Foundations </option>
+                            <option value=""> PHY229 - Practical Physics </option>
+                            <option value=""> ENT211 - Entrepreneurial Development and Innovation </option>
+
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="student-name"> Your Name. </label>
+                        <input class="input" id="student-name" type="text" placeholder=required>
+                    </div>
+
+                    <div>
+                        <label for="desc"> Short Description </label>
+                        <textarea id="desc" name="description" placeholder="Write a brief description of your assignment (what you did, any important notes)"></textarea>
+                    </div>
+                    <div>
+                        <label> Upload File </label>
+                        <div class="upload-area" aria-hidden="true">
+                            <p> Drag & drop files here (visual only)</p>
+                            <p class="muted-small"> Accepted: .pdf, .docx, .zip -- max size enforced later </p>
+                            <div style="margin-top: 8px;">
+                                <label class="btn" for="file-input"> Choose File </label>
+                                <input id="file-input" type="file" name="file" style="display: none;" aria-label="Choose assignment file" \>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="tags"> Tags(optional)</label>
+                            <input class="input" id="tags" name="tags" placeholder="e.g, report, lab, final" \>
+                        </div>
+                        <div class="col">
+                            <label for="due-date"> Due Date(info)</label>
+                            <input class="input" id="due-date" name="duedate" type="date" />
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn"> Submit Assignment </button>
+                        <button type="reset" class="btnghost">Clear</button>
+                        <div style="margin-left: auto;" class="muted-small"> Saved locally in week 3 (with Js)</div>
+                    </div>
+                </form>
+
+            </div>
+
+            <!-- Quick tips card -->
+             <div style="margin-top: 14px" class="card">
+                <h3 style="margin: 0 0 8px 0;"> Submission Tips </h3>
+                <ul style="margin: 0 0 0 18px;color:var(--muted)">
+                    <li> Use a descriptive file name(Module_Assignment_YourName.pdf)</li>
+                    <li> Include a short README in your upload if you have multiple files. </li>
+                    <li> Check accepted file types: .pdf, .docx, .zip </li>
+                </ul>
+             </div>
+         </section>
+         <a href="submissions.html" class="sub-btn">Go to Submissions</a>
+         
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>
