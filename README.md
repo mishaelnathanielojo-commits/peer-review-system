@@ -1,0 +1,1 @@
+The Peer Review System is a simple web app where students can submit where students can submit assignments, have their classmates review and comment on them, and receive grades. It helps student learn collaboratively by giving and receiving constructive feedback.
